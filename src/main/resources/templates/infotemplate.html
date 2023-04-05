@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<style type="text/css">
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td {
+	 text-align: left;
+	padding: 8px;
+	border-bottom: 1px solid #ddd;
+}
+
+th {
+	background-color: #f2f2f2;
+}
+
+</style>
+</head>
+<body>
+	<center>
+		<img th:src="${image}"></img>
+		<h2>SAVITRIBAI PHULE PUNE UNIVERSITY</h2>
+		<h3>Application for Regular Convocation Degree Certificate</h3>
+	</center>
+	<table>
+		<tr>
+			<th colspan="2">Personal Information</th>
+		</tr>
+		<tr>
+			<th>Full Name</th>
+			<td th:text="${fullName}"></td>
+		</tr>
+		<tr>
+			<th>Mother's Name</th>
+			<td th:text="${motherName}"></td>
+		</tr>
+		<tr>
+			<th>Gender</th>
+			<td th:text="${gender}"></td>
+		</tr>
+		<tr>
+			<th>Contact No</th>
+			<td th:text="${contactNo}"></td>
+		</tr>
+		<tr>
+			<th>E-mail</th>
+			<td th:text="${email}"></td>
+		</tr>
+		<tr>
+			<th>Correspondence Address</th>
+			<td th:text="${address}"></td>
+		</tr>
+		<tr>
+			<th>Pincode</th>
+			<td th:text="${pincode}"></td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th colspan="2">College / Institute Details</th>
+		</tr>
+		<tr>
+			<td>College Pun Code:</td>
+			<td th:text="${collegeCode}"></td>
+		</tr>
+		<tr>
+			<td>Name of College/Institute:</td>
+			<td th:text="${collegeName}"></td>
+		</tr>
+		<tr>
+			<td>Address:</td>
+			<td th:text="${collegeAddress}"></td>
+		</tr>
+		<tr>
+			<td>Examination:</td>
+			<td th:text="${examination}"></td>
+		</tr>
+		<tr>
+			<td>Month of Examination:</td>
+			<td th:text="${examMonth}"></td>
+		</tr>
+		<tr>
+			<td>Year of Examination:</td>
+			<td th:text="${examYear}"></td>
+		</tr>
+		<tr>
+			<td>Seat No.:</td>
+			<td th:text="${seatNo}"></td>
+		</tr>
+		<tr>
+			<td>PRN (If Any):</td>
+			<td th:text="${prn}"></td>
+		</tr>
+
+		<tr>
+			<td>Class or Grade Obtained:</td>
+			<td th:text="${classOrGradeObtained}"></td>
+		</tr>
+	</table>
+
+	<style>
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+th {
+	background-color: #f2f2f2;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+tr:hover {
+	background-color: #ddd;
+}
+</style>
+
+</body>
+
+</html>
+
+
