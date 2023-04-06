@@ -8,9 +8,6 @@ public class CsvTestApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CsvTestApplication.class, args);
-
-		System.err.println("WelCome....");
-
 	}
 
 }
